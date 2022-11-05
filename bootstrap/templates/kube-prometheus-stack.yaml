@@ -19,7 +19,7 @@ spec:
           enabled: false
         alertmanager:
           enabled: false
-    chart: prometheus-community/kube-prometheus-stack
+    chart: prometheus/kube-prometheus-stack
   syncPolicy:
     automated:
       prune: true
