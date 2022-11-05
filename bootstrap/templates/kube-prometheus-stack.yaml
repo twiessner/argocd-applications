@@ -15,9 +15,15 @@ spec:
     helm:
       skipCrds: true
       values: |-
-        grafana:
-          enabled: true
+        defaultRules:
+          create: true
+          rules:
+            alertmanager: false
         alertmanager:
+          enabled: false
+        ingress:
+          enabled: false
+        grafana:
           enabled: false
     chart: kube-prometheus-stack
   syncPolicy:
